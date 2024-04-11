@@ -9,13 +9,17 @@ public class Main {
 		int num = sc.nextInt();
 		int aux = num;
 		int fac = 1;
-		while (aux > 0) {
-			if ( aux != 0 ) {
-				fac = fac * aux;
-				aux --;
-			} 
+		if ( num >= 0 && num <= 10) {
+			while (aux > 0) {
+				if ( aux != 0 ) {
+					fac = fac * aux;
+					aux --;
+				} 
+			}
+			System.out.print("El Factorial de " + num + " es: " + fac );
+		} else {
+			System.out.println("ERROR. Debe ingresar un número entre 0 y 10.");
 		}
-		System.out.print("El Factorial de " + num + " es: " + fac );
 	}
 
 }
