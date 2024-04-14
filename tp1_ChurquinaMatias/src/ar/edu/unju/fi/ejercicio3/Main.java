@@ -15,6 +15,7 @@ public class Main {
 			System.out.println("Número ingresado impar. ");
 			System.out.print("Resultado: " + (num * 2));
 		}
+		sc.close();
 	}
 
 }

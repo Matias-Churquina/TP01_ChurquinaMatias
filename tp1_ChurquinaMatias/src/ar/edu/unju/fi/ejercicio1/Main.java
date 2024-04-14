@@ -7,7 +7,6 @@ public class Main {
 	public static void main (String[] args) {
 		System.out.println("**  Program: Promedio de 5 números enteros.  **");
 		Scanner sc= new Scanner(System.in);
-		int i = 1;
 		int num1;
 		int num2;
 		int num3;
@@ -24,6 +23,7 @@ public class Main {
 		System.out.println("Ingrese número 5:" );
 		num5 = sc.nextInt();
 		float promedio= ((num1+num2+num3+num4+num5)/5f);
-		System.out.println("- El promedio es: " + promedio );		
+		System.out.println("- El promedio es: " + promedio );	
+		sc.close();
 	}
 }

@@ -7,7 +7,6 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Ingrese un número entre 1 y 9: ");
 		int num = sc.nextInt();
-		int aux = num;
 		if ( num >= 1 && num <= 9) {
 			 for (int i = 0 ; i <= 10 ; i++) {
 				 System.out.println(num + " x " + i + " = " + (num * i ));
@@ -15,7 +14,7 @@ public class Main {
 		} else {
 			System.out.println("ERROR. Debe ingresar un número entre 1 y 9.");
 		}
-
+		sc.close();
 	}
 
 }

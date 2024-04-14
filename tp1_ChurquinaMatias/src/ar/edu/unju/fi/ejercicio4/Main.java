@@ -20,6 +20,7 @@ public class Main {
 		} else {
 			System.out.println("ERROR. Debe ingresar un número entre 0 y 10.");
 		}
+		sc.close();
 	}
 
 }
