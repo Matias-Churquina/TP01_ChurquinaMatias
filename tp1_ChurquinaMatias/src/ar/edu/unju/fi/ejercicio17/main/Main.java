@@ -106,13 +106,16 @@ public class Main {
 		return Encontrado;
 	}
 	public static void mostrarJugadores() {
-		
+		try {
 		System.out.println("- Ingrese nombre de jugador a buscar:");
 		String nombre = sc.next();
 		System.out.println("- Ingrese apellido de jugador a buscar:");
 		String apellido = sc.next();
 		Jugador bus = buscarJugador(nombre, apellido);
 		bus.toString();
+		}catch(Exception e){
+			System.out.println("Aun no se han cargado destinos a la lista.");
+		}
 	}
 	public static void ordenarApellido() {
 		Collections.sort(jugadores ,new Comparator<Jugador>() {
